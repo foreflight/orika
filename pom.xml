@@ -208,18 +208,6 @@
     </dependencyManagement>
 
 
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>maven2-repository.dev.java.net</id>-->
-<!--            <name>Java.net Repository for Maven</name>-->
-<!--            <url>http://download.java.net/maven/2/</url>-->
-<!--        </repository>-->
-<!--        <repository>-->
-<!--            <id>jboss</id>-->
-<!--            <url>http://repository.jboss.org/maven2</url>-->
-<!--        </repository>-->
-<!--    </repositories>-->
-
     <build>
         <pluginManagement>
             <plugins>
@@ -255,17 +243,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
                     <doclint>none</doclint>
-                    <additionalaram>-Xdoclint:none</additionalaram>
                     <additionalOptions>-Xdoclint:none</additionalOptions>
                     <additionalJOption>-Xdoclint:none</additionalJOption>
                 </configuration>
@@ -318,6 +301,21 @@
             </plugin>
         </plugins>
     </reporting>
+
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>foreflight-virtual</name>
+            <url>https://artifacts.foreflight.com/artifactory/foreflight-virtual</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>foreflight-virtual</name>
+            <url>https://artifacts.foreflight.com/artifactory/foreflight-virtual</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
     <modules>
         <module>core</module>
