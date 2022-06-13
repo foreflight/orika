@@ -9,7 +9,7 @@ Only use this to support our old use of Orika. New mapping functionality should 
 POM Ref is now:
 
     <dependency>
-		<artifactId>orika-parent</artifactId>
+		<artifactId>orika-core</artifactId>
 		<groupId>ma.glasnost.orika</groupId>
 		<version>1.6.0-FF</version>
     </dependency>
