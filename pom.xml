@@ -54,6 +54,9 @@
     </scm>
 
     <properties>
+        <!-- Output 8 compatible jars.  Compiler should be jdk17 -->
+        <maven.compiler.release>8</maven.compiler.release>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javassist.version>3.28.0-GA</javassist.version>
         <springframework.version>5.1.5.RELEASE</springframework.version>
