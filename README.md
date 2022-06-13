@@ -1,3 +1,30 @@
+
+
+# ForeFlight Fork
+
+The upstream project is abandoned.  But master has a fix for a jdk 17 bug that we need. So we're forking this to get that master.
+
+Only use this to support our old use of Orika. New mapping functionality should be done with https://mapstruct.org
+
+POM Ref is now:
+
+    <dependency>
+		<artifactId>orika-parent</artifactId>
+		<groupId>ma.glasnost.orika</groupId>
+		<version>1.6.0-FF</version>
+    </dependency>
+
+
+
+# DO NOT EDIT SOURCE!
+
+This is a read only  repo.  If there are updates we need to pull from upstream we'll adjust the version string.
+
+
+
+----
+----
+
 [![Build Status](https://secure.travis-ci.org/orika-mapper/orika.png)](http://travis-ci.org/orika-mapper/orika)
 [![Join the chat at https://gitter.im/orika-mapper](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/orika-mapper/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![GitHub site](https://img.shields.io/badge/GitHub-site-blue.svg)](http://orika-mapper.github.io/orika-docs/)
